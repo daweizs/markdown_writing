@@ -119,13 +119,54 @@ git config --list
    - Commit
 ```
 
-为本地库添加远程库连接：
+为本地库添加 Github 库连接：
 
 ```plaintext
 1. Ctrl+Shift+G 切换到 SOURCE CONTROL 浏览窗口
 2. CHANGES > ... > Remote > Add Remote...
    - git@github.com:daweizs/markdown_writing.git
-   - github
+   - origin
+   - yes
+```
+
+
+
+
+
+
+查看本地 Git 库的配置：
+
+```plaintext
+1. 进入文件夹 MDWORK\markdown_writing\.git
+2. 用编辑器打开文件 config
+```
+
+配置文件内容如下：
+
+```conf {.numberLines startFrom="1"}
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = false
+	logallrefupdates = true
+	symlinks = false
+	ignorecase = true
+[remote "gitee"]
+	url = git@gitee.com:daweizs/markdown_writing.git
+	fetch = +refs/heads/*:refs/remotes/gitee/*
+[remote "github"]
+	url = git@github.com:daweizs/markdown_writing.git
+	fetch = +refs/heads/*:refs/remotes/github/*
+```
+
+上述配置文件中有两个远程 Git 仓库 gitee 和 github，
+
+
+```plaintext
+1. Ctrl+Shift+G 切换到 SOURCE CONTROL 浏览窗口
+2. CHANGES > ... > Remote > Add Remote...
+   - git@github.com:daweizs/markdown_writing.git
+   - origin
    - yes
 3. CHANGES > ... > Remote > Add Remote...
    - git@gitee.com:daweizs/markdown_writing.git
@@ -159,6 +200,8 @@ git config --list
 
 上述配置文件中有两个远程 Git 仓库 gitee 和 github，
 
+
+
 ### Push 到远程仓库
 
 可以将本地的阶段性成果或每天的工作推送到远程 Git 仓库，具体操作如下：
@@ -167,7 +210,14 @@ git config --list
 2. 在顶端消息输入框输入提交信息
    - markdown wirting init
 3. 点击 Commit 按钮
+   - Yes
+4. Publish Branch
+   - github
 
+
+1. Ctrl+Shift+G 切换到 SOURCE CONTROL 浏览窗口
+2. CHANGES > ... > Pull,Push > Push to...
+   - gitee
 
 
 
