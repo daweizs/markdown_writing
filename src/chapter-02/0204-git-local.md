@@ -137,7 +137,7 @@ git config --list
    - origin
 ```
 
-提交改变到本地库，并推送到远程 Github 库：
+提交改变到本地库，并推送到远程 Git 库：
 
 ```plaintext
 1. Ctrl+Shift+G 切换到 SOURCE CONTROL 浏览窗口
@@ -174,98 +174,9 @@ git config --list
 	merge = refs/heads/main
 ```
 
-连接 Gitee 的配置如下：
+如果连接 Gitee，上述配置文件中
 
 ```conf {.numberLines startFrom="1"}
-[core]
-	repositoryformatversion = 0
-	filemode = false
-	bare = false
-	logallrefupdates = true
-	symlinks = false
-	ignorecase = true
-[remote "origin"]
-	url = git@gitee.com:daweizs/markdown_writing.git
-	fetch = +refs/heads/*:refs/remotes/origin/*
-[branch "main"]
-	remote = origin
-	merge = refs/heads/main
+url = git@gitee.com:daweizs/markdown_writing.git
 ```
-
-
-
-
-
-
-
-上述配置文件中有两个远程 Git 仓库 gitee 和 github，
-
-
-```plaintext
-1. Ctrl+Shift+G 切换到 SOURCE CONTROL 浏览窗口
-2. CHANGES > ... > Remote > Add Remote...
-   - git@github.com:daweizs/markdown_writing.git
-   - origin
-   - yes
-3. CHANGES > ... > Remote > Add Remote...
-   - git@gitee.com:daweizs/markdown_writing.git
-   - gitee
-```
-
-查看本地 Git 库的配置：
-
-```plaintext
-1. 进入文件夹 MDWORK\markdown_writing\.git
-2. 用编辑器打开文件 config
-```
-
-配置文件内容如下：
-
-```conf {.numberLines startFrom="1"}
-[core]
-	repositoryformatversion = 0
-	filemode = false
-	bare = false
-	logallrefupdates = true
-	symlinks = false
-	ignorecase = true
-[remote "gitee"]
-	url = git@gitee.com:daweizs/markdown_writing.git
-	fetch = +refs/heads/*:refs/remotes/gitee/*
-[remote "github"]
-	url = git@github.com:daweizs/markdown_writing.git
-	fetch = +refs/heads/*:refs/remotes/github/*
-```
-
-上述配置文件中有两个远程 Git 仓库 gitee 和 github，
-
-
-
-### Push 到远程仓库
-
-可以将本地的阶段性成果或每天的工作推送到远程 Git 仓库，具体操作如下：
-
-1. Ctrl+Shift+G 切换到 SOURCE CONTROL 浏览窗口
-2. 在顶端消息输入框输入提交信息
-   - markdown wirting init
-3. 点击 Commit 按钮
-   - Yes
-4. Publish Branch
-   - github
-
-
-1. Ctrl+Shift+G 切换到 SOURCE CONTROL 浏览窗口
-2. CHANGES > ... > Pull,Push > Push to...
-   - gitee
-
-
-
-
-
-
-
-
-
-
-
 

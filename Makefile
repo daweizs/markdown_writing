@@ -4,10 +4,10 @@ INPUT := src/chapter-01/0100-introduction.md \
 	src/chapter-02/0200-writing-env.md \
 	src/chapter-02/0201-vscode.md \
 	src/chapter-02/0202-markdown.md \
-#	src/chapter-02/0203-git-local.md \
-#	src/chapter-02/0204-git-remote.md \
-#		src/chapter-03/0300-mpe-base.md \
-#	src/chapter-03/0301-commonmark.md \
+	src/chapter-02/0203-git-remote.md \
+	src/chapter-02/0204-git-local.md \
+		src/chapter-03/0300-mpe-base.md \
+	src/chapter-03/0301-commonmark.md \
 
 all: init html tex pdf
 

@@ -3,7 +3,7 @@
 [^github_home]: <https://github.com/>
 [^gitee_home]: <https://gitee.com/>
 
-Git 远程仓库可以选择在 Github 或 Gitee 创建。
+Git 远程仓库可以选择在 Github[^github_home] 或 Gitee[^gitee_home] 创建。
 
 ### Github
 
@@ -47,9 +47,9 @@ Git 远程仓库可以选择在 Github 或 Gitee 创建。
 4. 点击 daweizs/markdown_writing 进入资源库页面
 ```
 
-新建 Github 仓库的网络地址是： https://github.com/daweizs/markdown_writing
+新建 Github 仓库的网络地址是： <https://github.com/daweizs/markdown_writing>
 
-新建 Github 仓库的 SSH 访问地址是：git@github.com:daweizs/markdown_writing.git
+新建 Github 仓库的 SSH 访问地址是：<git@github.com:daweizs/markdown_writing.git>
 
 ### Gitee
 
@@ -74,7 +74,7 @@ Git 远程仓库可以选择在 Github 或 Gitee 创建。
 
 在 Gitee 上创建资源库，具体操作如下：
 
-```
+```plaintext
 1. 登录到 Gitee
 2. 点击窗口右上角 "十" 按钮 > 十 新建仓库
    - 仓库名称：markdown_writing
@@ -88,8 +88,8 @@ Git 远程仓库可以选择在 Github 或 Gitee 创建。
    - 创建
 ```
 
-新建 Gitee 仓库的网络地址是： https://gitee.com/daweizs/markdown_writing
+新建 Gitee 仓库的网络地址是： <https://gitee.com/daweizs/markdown_writing>
 
-新建 Gitee 仓库的 SSH 访问地址是： git@gitee.com:daweizs/markdown_writing.git
+新建 Gitee 仓库的 SSH 访问地址是： <git@gitee.com:daweizs/markdown_writing.git>
 
 
