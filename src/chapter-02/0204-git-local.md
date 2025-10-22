@@ -119,7 +119,7 @@ git config --list
    - Commit
 ```
 
-为本地库添加 Github 库连接：
+如果远程库使用 Github，为本地库添加 Github 库连接：
 
 ```plaintext
 1. Ctrl+Shift+G 切换到 SOURCE CONTROL 浏览窗口
@@ -129,12 +129,32 @@ git config --list
    - yes
 ```
 
+如果远程库使用 Gitee，为本地库添加 Gitee 库连接：
+
+```plaintext
+1. Ctrl+Shift+G 切换到 SOURCE CONTROL 浏览窗口
+2. CHANGES > ... > Remote > Add Remote...
+   - git@gitee.com:daweizs/markdown_writing.git
+   - origin
+   - yes
+```
+
 提交改变到本地库，并推送到远程 Github 库：
 
+```plaintext
 1. Ctrl+Shift+G 切换到 SOURCE CONTROL 浏览窗口
 2. 输入提交信息
+   - git local config
 3. Commit
-4. 
+4. Sync Changes 
+5. This action will pull and push commits from and to "origin/main"
+   - OK
+```
+
+
+
+
+
 
 
 
