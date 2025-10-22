@@ -129,6 +129,13 @@ git config --list
    - yes
 ```
 
+提交改变到本地库，并推送到远程 Github 库：
+
+1. Ctrl+Shift+G 切换到 SOURCE CONTROL 浏览窗口
+2. 输入提交信息
+3. Commit
+4. 
+
 
 
 
@@ -140,7 +147,7 @@ git config --list
 2. 用编辑器打开文件 config
 ```
 
-配置文件内容如下：
+连接 Github 的配置如下：
 
 ```conf {.numberLines startFrom="1"}
 [core]
@@ -150,13 +157,25 @@ git config --list
 	logallrefupdates = true
 	symlinks = false
 	ignorecase = true
-[remote "gitee"]
-	url = git@gitee.com:daweizs/markdown_writing.git
-	fetch = +refs/heads/*:refs/remotes/gitee/*
-[remote "github"]
+[remote "origin"]
 	url = git@github.com:daweizs/markdown_writing.git
-	fetch = +refs/heads/*:refs/remotes/github/*
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "main"]
+	remote = origin
+	merge = refs/heads/main
 ```
+
+连接 Gitee 的配置如下：
+
+```conf {.numberLines startFrom="1"}
+
+```
+
+
+
+
+
+
 
 上述配置文件中有两个远程 Git 仓库 gitee 和 github，
 
