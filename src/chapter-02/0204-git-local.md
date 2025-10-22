@@ -126,7 +126,6 @@ git config --list
 2. CHANGES > ... > Remote > Add Remote...
    - git@github.com:daweizs/markdown_writing.git
    - origin
-   - yes
 ```
 
 如果远程库使用 Gitee，为本地库添加 Gitee 库连接：
@@ -136,7 +135,6 @@ git config --list
 2. CHANGES > ... > Remote > Add Remote...
    - git@gitee.com:daweizs/markdown_writing.git
    - origin
-   - yes
 ```
 
 提交改变到本地库，并推送到远程 Github 库：
@@ -150,15 +148,6 @@ git config --list
 5. This action will pull and push commits from and to "origin/main"
    - OK
 ```
-
-
-
-
-
-
-
-
-
 
 查看本地 Git 库的配置：
 
@@ -188,7 +177,19 @@ git config --list
 连接 Gitee 的配置如下：
 
 ```conf {.numberLines startFrom="1"}
-
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = false
+	logallrefupdates = true
+	symlinks = false
+	ignorecase = true
+[remote "origin"]
+	url = git@gitee.com:daweizs/markdown_writing.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "main"]
+	remote = origin
+	merge = refs/heads/main
 ```
 
 
