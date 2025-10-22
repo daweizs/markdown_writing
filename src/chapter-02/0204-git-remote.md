@@ -1,9 +1,0 @@
-## Git Remote
-
-### Github
-
-
-### Gitlib
-
-
-
